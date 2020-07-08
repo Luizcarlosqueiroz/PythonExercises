@@ -13,10 +13,10 @@
 # Escreva um programa que peça o tipo e a quantidade de carne comprada pelo usuário e gere um cupom fiscal, contendo as informações da compra:
 # tipo e quantidade de carne, preço total, tipo de pagamento, valor do desconto e valor a pagar.
 
-prod = input("Qual o produto você deseja?\n"
+prod = int(input("Qual o produto você deseja?\n"
              "[1] - Filé Duplo\n"
              "[2] - Alcantra\n"
-             "[3] - Picanha\n")
+             "[3] - Picanha\n"))
 produto = ""
 preco = 0
 kg = float(input("Quantos quilos? "))
@@ -33,19 +33,19 @@ elif prod == 3:
 
 if prod == 1:
     if kg <= 5:
-        preco = kg * 4.9
+        preco = (kg * 4.9)
     elif kg > 5:
-        preco = kg * 5.8
+        preco = (kg * 5.8)
 elif prod == 2:
     if kg <= 5:
-        preco = kg * 5.9
+        preco = (kg * 5.9)
     elif kg > 5:
-        preco = kg * 6.8
+        preco = (kg * 6.8)
 elif prod == 3:
     if kg <= 5:
-        preco = kg * 6.9
+        preco = (kg * 6.9)
     elif kg > 5:
-        preco = kg * 7.8
+        preco = (kg * 7.8)
 
 
 if pagamento == "S":
